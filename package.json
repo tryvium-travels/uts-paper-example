@@ -12,8 +12,7 @@
     "mythril-security-checks": "sh ./scripts/run-mythril-checks.sh"
   },
   "files": [
-    "/contracts/**/*.sol",
-    "!/contracts/test/**"
+    "/contracts/**/*.sol"
   ],
   "devDependencies": {
     "@atixlabs/hardhat-time-n-mine": "^0.0.5",

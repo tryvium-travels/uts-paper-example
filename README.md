@@ -13,6 +13,50 @@ The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
 
 # Usage
 
+Like you do with [`@openzeppelin/contracts`](https://github.com/OpenZeppelin/openzeppelin-contracts):
+
+``` bash
+npm install @tryvium-pay/universal-token-swapper
+# or with yarn
+yarn add @tryvium-pay/universal-token-swapper
+```
+
+and later import the contracts in your code. After that you can refer to them in your contract like this:
+
+``` solidity
+pragma solidity ^0.8.7;
+
+import "@tryvium-pay/universal-token-swapper/contracts/ITokenSwapper.sol";
+
+contract MultiPayerExample {
+  swapper ITokenSwapper private immutable;
+
+  // and so on...
+}
+```
+
+Or extend the functionality of the current swappers like this:
+
+``` solidity
+pragma solidity ^0.8.7;
+
+import "@tryvium-pay/universal-token-swapper/contracts/ITokenSwapper.sol";
+
+contract ExtendedTokenSwapper is ITokenSwapper {
+  // implement the ITokenSwapper virtual methods
+}
+```
+
+that's it.
+
+## Need some test mocks for your dex routers ?
+
+You can use ours !!! Check the contract we have in the [`contracts/test`](./contracts/test) folder.
+
+_____
+
+### APPENDIX: How to build locally
+
 First of all you need to install the dependencies
 
 ``` bash
@@ -45,13 +89,13 @@ This project is powered by [`waffle`](https://getwaffle.io), [`Typescript`](http
 
 Please, see the details of the scripts in [`package.json` file](package.json).
 
-# Running tests in VSCode UI
+### Running tests in VSCode UI
 
 > The content comes from [this page](https://hardhat.org/guides/vscode-tests.html).
 
 You can run your tests from [Visual Studio Code](https://code.visualstudio.com) by using one of its Mocha integration extensions. We recommend using [Mocha Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter).
 
-### Making TypeScript tests work
+##### Making TypeScript tests work
 
 Running tests written in TypeScript from [Visual Studio Code](https://code.visualstudio.com) requires you to set the vscode option `"mochaExplorer.files"` to `"test/**/*.{j,t}s"`.
 

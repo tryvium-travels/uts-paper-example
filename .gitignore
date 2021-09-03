@@ -1,0 +1,22 @@
+node_modules
+build
+typechain
+cache
+flatten
+coverage
+.env
+
+# yarn 2 and non zero-install
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Hardhat files
+cache
+artifacts
+
+.npmrc

@@ -2,14 +2,14 @@
   <img src="https://res.cloudinary.com/tryvium/image/upload/v1551645701/company/logo-circle.png" height=250 style="margin-left:30px;margin-right:30px;"/> 
 </p>
 
-![GitHub](https://img.shields.io/github/license/tryvium-pay/universal-token-swapper?style=flat-square)
+![GitHub](https://img.shields.io/github/license/tryvium-travels/uts-paper-example?style=flat-square)
 ![Twitter Follow](https://img.shields.io/twitter/follow/tryviumtravels?style=social)
 
 # Tryvium Universal Token Swapper
 
-The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
+> **WARNING**: This repository is in early-alpha version, highly unstable and is not definitely ready for production use.
 
-### WELCOME INTO THE NEW PAYMENTS ERA
+The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
 
 # Usage
 

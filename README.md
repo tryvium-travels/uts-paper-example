@@ -13,20 +13,18 @@ The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
 
 # Usage
 
-Like you do with [`@openzeppelin/contracts`](https://github.com/OpenZeppelin/openzeppelin-contracts):
+Initialize the `ETH_INFURA_RPC_URL` variable with a valid infura RPC node URL to enable tests.
 
-``` bash
-npm install @tryvium-pay/universal-token-swapper
-# or with yarn
-yarn add @tryvium-pay/universal-token-swapper
+```
+export ETH_INFURA_RPC_URL="<your-personal-infura-rpc-url>"
 ```
 
-and later import the contracts in your code. After that you can refer to them in your contract like this:
+Copy the contracts in your project. After that you can refer to them in your contract like this:
 
 ``` solidity
 pragma solidity ^0.8.7;
 
-import "@tryvium-pay/universal-token-swapper/contracts/ITokenSwapper.sol";
+import "ITokenSwapper.sol";
 
 contract MultiPayerExample {
   swapper ITokenSwapper private immutable;
@@ -40,7 +38,7 @@ Or extend the functionality of the current swappers like this:
 ``` solidity
 pragma solidity ^0.8.7;
 
-import "@tryvium-pay/universal-token-swapper/contracts/ITokenSwapper.sol";
+import "ITokenSwapper.sol";
 
 contract ExtendedTokenSwapper is ITokenSwapper {
   // implement the ITokenSwapper virtual methods

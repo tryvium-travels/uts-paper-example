@@ -5,7 +5,7 @@ import {
     OneInchV4RouterMock,
     SimpleOneInchV4TokenSwapper,
     ERC20,
-} from "@/typechain";
+} from "@/typechain-types";
 
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { BigNumber, Wallet } from "ethers";
@@ -50,19 +50,19 @@ describe("dex-implementations/one-inch/SimpleOneInchV4TokenSwapper tests", () =>
 
         test_swap_token_base = await test_token_factory.deploy(
             max_supply,
-        );
+        ) as ERC20;
 
         test_swap_token_quote = await test_token_factory.deploy(
             max_supply,
-        );
+        ) as ERC20;
 
-        usdt_eth_token = ERC20_factory.attach(usdt_eth_address);
-        usdc_eth_token = ERC20_factory.attach(usdc_eth_address);
+        usdt_eth_token = ERC20_factory.attach(usdt_eth_address) as ERC20;
+        usdc_eth_token = ERC20_factory.attach(usdc_eth_address) as ERC20;
 
         real_dex_swapper = await dex_swapper_factory.deploy(
             real_one_inch_router_eth_address,
             usdt_eth_token.address,
-        );
+        ) as SimpleOneInchV4TokenSwapper;
     });
 
     beforeEach(async () => {
@@ -73,12 +73,12 @@ describe("dex-implementations/one-inch/SimpleOneInchV4TokenSwapper tests", () =>
             test_swap_token_base.address,
             test_swap_token_quote.address,
             1,
-        );
+        ) as OneInchV4RouterMock;
 
         mocked_dex_swapper = await dex_swapper_factory.deploy(
             one_inch_router_mock.address,
             test_swap_token_quote.address
-        );
+        ) as SimpleOneInchV4TokenSwapper;
 
         await test_swap_token_base.transfer(one_inch_router_mock.address, utils.parseEther("1000"));
         await test_swap_token_quote.transfer(one_inch_router_mock.address, utils.parseEther("1000"));

@@ -1,6 +1,7 @@
 node_modules
 build
 typechain
+typechain-types
 cache
 flatten
 coverage

@@ -7,9 +7,9 @@
 
 # Tryvium Universal Token Swapper
 
-The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
+> **WARNING**: This repository is in early-alpha version, highly unstable and is not definitely ready for production use.
 
-### WELCOME INTO THE NEW PAYMENTS ERA
+The Tryvium Universal Token Swapper, a new way to transform swaps into payments.
 
 # Usage
 

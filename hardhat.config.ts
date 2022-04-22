@@ -13,7 +13,7 @@ import networks from "./hardhat.networks";
 
 const config : HardhatUserConfig = {
   solidity: {
-    version: "0.8.7",
+    version: "0.8.13",
     settings: {
       optimizer: {
         enabled: true,
@@ -22,7 +22,7 @@ const config : HardhatUserConfig = {
     },
   },
   ovm: {
-    solcVersion: "0.8.7",
+    solcVersion: "0.8.13",
   },
   networks,
 };

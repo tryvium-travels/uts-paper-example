@@ -22,7 +22,7 @@ export ETH_INFURA_RPC_URL="<your-personal-infura-rpc-url>"
 Copy the contracts in your project. After that you can refer to them in your contract like this:
 
 ``` solidity
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.13;
 
 import "ITokenSwapper.sol";
 
@@ -36,7 +36,7 @@ contract MultiPayerExample {
 Or extend the functionality of the current swappers like this:
 
 ``` solidity
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.13;
 
 import "ITokenSwapper.sol";
 

@@ -1,11 +1,11 @@
-<p align="center">
-  <img src="https://res.cloudinary.com/tryvium/image/upload/v1551645701/company/logo-circle.png" height=250 style="margin-left:30px;margin-right:30px;"/> 
-</p>
+<center>
+    <img height=200 src="https://i.imgur.com/Fq80eXT.png" />
+</center>
 
 ![GitHub](https://img.shields.io/github/license/tryvium-travels/uts-paper-example?style=flat-square)
 ![Twitter Follow](https://img.shields.io/twitter/follow/tryviumtravels?style=social)
 
-# Tryvium Universal Token Swapper
+# Tryvium Travels - Universal Token Swapper (UTS)
 
 > **WARNING**: This repository is in early-alpha version, highly unstable and is not definitely ready for production use.
 
